@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 200vh;
+            background:linear-gradient(-100deg ,purple ,rgb(255, 50, 119));
+        }
+        section{height: inherit;
+            
+        }
+        .head{
+            width: 100%;
+            height: calc(100vh * 10 /100);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-block: 20px;
+        }
+       .head > div{
+           
+         background-color: rgb(255, 196, 0);
+           height: 50%;
+           flex-grow: 1;
+           margin-inline: 10px;
+       }
+       .body{
+           width: 100%;
+            height: calc(100vh * 67 /100);
+            display: flex;
+            justify-content: center;
+            
+       }
+       .body > div:first-child{
+        background-color: rgb(255, 255, 255);
+           min-height: 100%;
+          flex-grow: 2.5;
+           margin-left: 10px;
+       }
+       .body > div:nth-child(2){
+        
+      height: 100%;
+      flex-grow: 1;
+       margin-inline: 12px;
+       display: flex;
+       flex-wrap: wrap;
+       align-content: space-between;
+       
+   }
+   
+   .body > div:nth-child(2) > div{
+    background-color: rgb(255, 196, 0);
+       width: 100%;
+       height: 48.4%;
+       /* margin-block-end: 20px; */
+   }
+
+   .body2{
+            width: 100%;
+            height: calc(100vh * 30 /100);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 15px;
+        }
+       .body2 > div{
+           
+         
+           height: inherit;
+           flex-grow: 1;
+           margin-inline:10px;
+           background-color: rgb(255, 255, 255);
+       }
+       .body3{
+        height: calc(100vh * 40 /100);
+        background-color: rgb(255, 255, 255);
+        max-width: 100vw;
+        margin-top: 15px;
+        margin-inline: 10px;
+       }
+       .grams_title{
+        height: calc(100vh * 1.5 /100);
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+       }
+       .grams_title > div{
+          min-height: 100%;
+          width: 100%;
+           
+       }
+
+       .grams_title > #before{
+           background: linear-gradient(90deg, rgba(0,0,0, 0.0) ,rgb(255, 196, 0));
+       }
+       .grams_title > #after{
+           background: linear-gradient(90deg,rgb(255, 196, 0) ,rgba(0,0,0, 0.0) );
+       }
+
+       .grams_title > span{
+          margin-inline: 10px;
+           
+       }
+    </style>
+</head>
+<body>
+    <section>
+        
+        <div class="head">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class = "body">
+            <div></div>
+            <div>
+                <div></div>
+                <div></div>
+            </div>
+            
+        </div>
+        <div class = "body2">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class = "body3">
+            
+        </div>
+        <div class="grams_title">
+            <div id="before"></div>
+           <span>Gramstitle</span>
+            <div id="after"></div>
+            
+        </div>
+        <div class="grams_title">
+            <div id="before"></div>
+           <span>Gramstitle</span>
+            <div id="after"></div>
+            
+        </div>
+    </section>
+</body>
+</html>
