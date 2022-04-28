@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <title>Document</title>
     <style>
         body{
@@ -13,6 +14,10 @@
         section{height: inherit;
             
         }
+       p{
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+   
+       }
         .head{
             width: 100%;
             height: calc(100vh * 10 /100);
@@ -24,9 +29,10 @@
        .head > div{
            
          background-color: rgb(255, 196, 0);
-           height: 50%;
            flex-grow: 1;
            margin-inline: 10px;
+           text-align: center;
+           
        }
        .body{
            width: 100%;
@@ -35,7 +41,7 @@
             justify-content: center;
             
        }
-       .body > div:first-child{
+       .body > div:nth-child(1){
         background-color: rgb(255, 255, 255);
            min-height: 100%;
           flex-grow: 2.5;
@@ -45,20 +51,22 @@
         
       height: 100%;
       flex-grow: 1;
-       margin-inline: 12px;
+       margin-inline: 15px;
        display: flex;
        flex-wrap: wrap;
        align-content: space-between;
-       
+       max-width: 33%;
    }
    
    .body > div:nth-child(2) > div{
     background-color: rgb(255, 196, 0);
        width: 100%;
-       height: 48.4%;
+       min-height: 48%;
+       margin: 0;
+       
        /* margin-block-end: 20px; */
    }
-
+   
    .body2{
             width: 100%;
             height: calc(100vh * 30 /100);
@@ -105,31 +113,77 @@
           margin-inline: 10px;
            
        }
+       .images{
+        width: 100%;
+        height: calc(100vh * 50 /100);
+        display: flex;
+        justify-content:start;
+        flex-wrap: wrap;
+       }
+       .images > div{
+           height: 100%;
+           flex-grow: 1;
+           width: calc(100vw * 20 /100);
+           background-color: green;
+           margin: 10px;
+       }
+       img{
+         width: 100%;
+           height: 100%;
+       }
+
+      .p{
+        position: relative; top: 35% ;text-align: center;
+       
+      }
+     .p > b{
+          font-size: 22px;
+      }
+
     </style>
 </head>
 <body>
     <section>
         
         <div class="head">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div><p><b>TACOS</b></p></div>
+            <div><p><b>BEERS</b></p></div>
+            <div><p><b>WINES</b></p></div>
+            <div><p><b>DESSERTS</b></p></div>
+            <div><p><b>RESERVATIONS</b></p></div>
         </div>
         <div class = "body">
-            <div></div>
             <div>
-                <div></div>
-                <div></div>
+               
+                <p style="position: absolute; padding-block: 5px;font-size:larger; background-color: rgb(255, 196, 0); top: 42% ;left: 5%;"><b>Terry's Tacos Joint</b></p>
+              
+                
+                <p style="position: absolute;
+                 background-color: rgb(255, 196, 0); top: 50% ;left: 5%; font-size: smaller;"><b>Pretty Good Tacos</b></p>
+         
+            </div>
+          
+            <div>
+                <div><p class="p">
+                    <b>Tacos<br>12.00$</b>
+                </p>
+            </div>
+                <div ><p class="p">
+                    <b>Burger</br>12.00$</b>
+            </p>
+        </div>
             </div>
             
         </div>
         <div class = "body2">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div><p class="p"><b>🌮Tacos</b></p></div>
+            <div><p class="p"><b>🍔Burger</b>
+               </p> </div>
+            <div><p class="p"><b>🍟Fry</b>
+               </p></div>
+            <div><p class="p"><b>🌭Hotdog</b>
+                
+               </p> </div>
         </div>
         <div class = "body3">
             
@@ -140,11 +194,15 @@
             <div id="after"></div>
             
         </div>
-        <div class="grams_title">
-            <div id="before"></div>
-           <span>Gramstitle</span>
-            <div id="after"></div>
-            
+        <div class="images">
+            <div><img src="/24318.jpg" alt=""></div>
+            <div><img src="/24318.jpg" alt="" ></div>
+            <div><img src="/24318.jpg" alt="" ></div>
+            <div><img src="/24318.jpg" alt="" ></div>
+            <div><img src="/24318.jpg" alt="" ></div>
+            <div><img src="/24318.jpg" alt="" ></div>
+            <div><img src="/24318.jpg" alt="" ></div>
+            <div><img src="/24318.jpg" alt="" ></div>
         </div>
     </section>
 </body>
