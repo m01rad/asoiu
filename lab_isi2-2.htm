@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       /*  table, th, td {
+              border:1px solid black;
+       } */
+       table{
+           width: 100%;
+           height: 100%;
+       }
+      th{
+          padding: 10px;
+      }
+      td:first-child {
+          width: 0;
+          height:100%;
+           padding-block: 3px;
+      }
+    
+      .circle{
+         display:flex;
+          justify-content:center;
+          align-items:center;
+          border: 1px solid black ;
+          width: 200px;
+          min-height: 200px;
+         border-radius: 50%;
+         margin: 5px;
+      }
+      .square{
+        border: 1px solid black ;
+        width: 200px;
+        min-height: 30%;
+        margin-block: 1px;
+      }
+      .square:last-child{
+          height: 70%;
+         
+      }
+      td:nth-child(2) > div{
+        height: 100%;
+      }
+
+      #div{
+         width: wrap;
+         height: 60%;
+         border: 3px solid black;
+         margin: 10%;
+         padding: 10px 30px;
+         overflow:scroll;
+      }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th colspan="3">Head</th>
+            
+        </tr>
+        <tr>
+            <td>
+                <div class="circle"><a href="lab_isi2.htm">home</a></div>
+                <div class="circle"><a href="lab_isi2-2.htm">Project2</a></div>
+                <div class="circle"><a href="lab_isi2-3.htm">Project3</a></div>
+            </td>
+            <td >
+                <div id="div">
+               <h1>Lorem ipsum dolor, sit amet .(Project 2)</h1>
+                <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+              quam repellendus quae iusto eum! Ipsam labore ab explicabo nisi
+              dolor autem corrupti, at mollitia pariatur? Error enim placeat
+              iusto qui. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Atque facere hic facilis sit unde voluptas nostrum quam.
+              Eius veritatis molestias recusandae! Tempore sit minus facere
+              exercitationem provident laborum rerum blanditiis! Lorem, ipsum
+              dolor sit amet consectetur adipisicing elit. Soluta illo dolorum,
+              molestias odit ipsa nostrum cum quibusdam minima expedita, natus
+              cupiditate esse ratione veniam debitis? Odio quidem officia eius?
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Consectetur necessitatibus natus ipsum voluptate aspernatur
+              laborum nihil placeat tempora neque. Iusto ut dolorem enim aut
+              impedit cumque ipsa deleniti cupiditate rem. Lorem, ipsum dolor
+              sit amet consectetur adipisicing elit. Fuga consequuntur
+              exercitationem ullam, expedita adipisci tempora veritatis est non
+              suscipit amet sequi error repudiandae provident? Sunt, placeat?
+              Consequatur vel sed dolorem? Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit. Minus dolores perspiciatis officiis,
+              tempore repudiandae labore optio, animi commodi assumenda nulla
+              culpa ipsum quas nesciunt harum, distinctio quod corporis mollitia
+              quis?
+            </p>
+            </div>
+            </td>
+          
+                
+           
+        </tr>
+       
+        
+    </table>
+</body>
+</html>
+
+
